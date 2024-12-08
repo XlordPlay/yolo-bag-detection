@@ -1,6 +1,8 @@
 import cv2
 import os
-
+"""
+if u have path error, enter your full path
+"""
 cap = cv2.VideoCapture("../input/Задание.mp4")
 frame_count = 0
 dirname = "./images"

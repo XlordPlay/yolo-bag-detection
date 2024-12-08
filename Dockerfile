@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Создание рабочей директории
 WORKDIR /app
 
-# Копирование только файла зависимостей для установки
+# Копирование только файла зависимостей для установки.
 COPY requirements.txt .
 
 # Установка Python-зависимостей

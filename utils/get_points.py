@@ -11,7 +11,7 @@ cap = cv2.VideoCapture("../input/Задание.mp4")
 ret, frame = cap.read()
 
 if not ret:
-    print("Error reading video file")
+    print("Error reading video file.")
 else:
     cv2.namedWindow("Frame")
     cv2.setMouseCallback("Frame", get_points)

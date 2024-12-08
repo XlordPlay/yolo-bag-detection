@@ -2,8 +2,11 @@ import cv2
 from ultralytics import YOLO
 from ObjectCounter import ObjectCounter
 
-model = YOLO("/home/xlordplay/test_task_cv/object_recognition/yolo-bag-counter/best.pt")
-cap = cv2.VideoCapture("/home/xlordplay/test_task_cv/object_recognition/yolo-bag-counter/input/Задание.mp4")
+"""
+enter your full path if u have error
+"""
+model = YOLO("../best.pt")
+cap = cv2.VideoCapture("../Задание.mp4")
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 

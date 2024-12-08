@@ -1,6 +1,9 @@
 import cv2
 from ultralytics import YOLO
 
+"""
+if u have path error, enter your full path
+"""
 model = YOLO("../best.pt")
 cap = cv2.VideoCapture("../input/Задание.mp4")
 assert cap.isOpened(), "Error reading video file"

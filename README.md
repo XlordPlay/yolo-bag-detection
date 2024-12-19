@@ -35,6 +35,11 @@ git clone https://github.com/XlordPlay/yolo-bag-detection
 ├── input
 │   └── Задание.mp4
 └── output
+|
+└──utils
+  ├──data_collect.py
+  ├──detect.py
+  ├──get_points.py
 ```
 
 ### 4. Создание и запуск контейнера Docker
